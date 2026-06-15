@@ -1,1 +1,1 @@
-geode mod
+click = 2 clicks

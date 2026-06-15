@@ -11,6 +11,7 @@
 	"version": "v1.0.0",
 	"developer": "OhNoesImBald",
 	"description": "makes the game think you pressed 2 buttons (mouse + up arrow)",
+	"tags": ["gameplay", "joke", "offline"],
 	"links": {
 		"source": "https://github.com/ohnoesimbald/ohnoesimbald.editor-switch",
 		"community": "https://discord.gg/WWvSVktKv"
@@ -21,6 +22,6 @@
 			"description": "enables the double key press",
 			"type": "bool",
 			"default": true
-		},
-	},
+		}
+	}
 }

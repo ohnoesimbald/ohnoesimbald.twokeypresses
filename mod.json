@@ -10,5 +10,17 @@
 	"name": "Two Key Presses",
 	"version": "v1.0.0",
 	"developer": "OhNoesImBald",
-	"description": "makes the game think you pressed 2 buttons (mouse + up arrow)"
+	"description": "makes the game think you pressed 2 buttons (mouse + up arrow)",
+	"links": {
+		"source": "https://github.com/ohnoesimbald/ohnoesimbald.editor-switch",
+		"community": "https://discord.gg/WWvSVktKv"
+	},
+	"settings": {
+		"toggle": {
+			"name": "Enable Mod",
+			"description": "enables the double key press",
+			"type": "bool",
+			"default": true
+		}
+	},
 }

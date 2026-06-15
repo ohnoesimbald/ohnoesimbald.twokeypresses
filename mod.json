@@ -21,6 +21,6 @@
 			"description": "enables the double key press",
 			"type": "bool",
 			"default": true
-		}
+		},
 	},
 }

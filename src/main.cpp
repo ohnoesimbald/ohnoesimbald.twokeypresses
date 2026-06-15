@@ -11,7 +11,13 @@ class $modify(InputManipulator, GJBaseGameLayer) {
 
     void handleButton(bool down, int button, bool player1) {
 
-        // prevent recursion
+        // if mod disabled, do normal behavior
+        if (!Mod::get()->getSettingValue<bool>("toggle")) {
+            GJBaseGameLayer::handleButton(down, button, player1);
+            return;
+        }
+
+        // stop recursion
         if (m_fields->m_fake) {
             GJBaseGameLayer::handleButton(down, button, player1);
             return;
@@ -22,7 +28,7 @@ class $modify(InputManipulator, GJBaseGameLayer) {
         // original input
         GJBaseGameLayer::handleButton(down, button, player1);
 
-        // duplicate ONLY presses
+        // duplicate ONLY button presses
         if (down) {
 
             // fake release
